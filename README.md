@@ -6,6 +6,10 @@ It includes some utility functions abstracted to `utils.ts`.
 
 ## Installation
 
+### `npm i yarn`
+
+If you do not have yarn installed.
+
 ### `yarn`
 
 Will install any required dependencies.
