@@ -28,12 +28,12 @@ const convertFloat = (num: number): string => {
   if (!dollars) {
     if (cents === 1) return 'One cent.'
     else return `${format(convertHundreds(cents))}cents.`
-  } else {
-    if (dollars === 1) {
-      if (cents === 1) return 'One dollar and one cent.'
-      else return `One dollar and ${convertHundreds(cents)}cents.`
-    } else return `${format(`${convertMillions(dollars)} dollars`)} and ${convertHundreds(cents)} cents.`
-  }
+  } 
+  else if (dollars === 1) {
+    if (cents === 1) return 'One dollar and one cent.'
+    else return `One dollar and ${convertHundreds(cents)}cents.`
+  } 
+  else return `${format(`${convertMillions(dollars)} dollars`)} and ${convertHundreds(cents)} cents.`
 }
 
 const format = (str: string): string => {
